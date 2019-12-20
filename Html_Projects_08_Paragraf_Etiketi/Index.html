@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body>
+    
+<!-- Html' de paragraflar yazabilmek için <p> etiketi kullanılır.  -->
+
+    <p> Bu bir paragraftır </p>
+
+    <!-- Bir paragraf etiketi blok elementtir. Bunu bir background değeri vererek test edebilirsiniz.-->
+
+    <p style="background-color: blueviolet; color: white;"> Bu Bir Paragraftır</p>
+
+    <!-- Bir paragraf etiketi içinde yazılan yazıya verdiğiniz şekiller tarayıcıya yansımayacaktır. Örneğin Hmtl ekranında bir alt satıra geçerek bir kaç satır paragraf yazınız. Bunu çalıştırdığınızda görüntünün istediğiniz gibi olmadığını yan yana yazıldığını göreceksiniz. -->
+
+    <p> Bu bir paragraftır
+        Bu bir alt satıra geçmiş paragraftır
+        3. satır yazısı. 
+    </p>
+
+    <!-- Html'de bir alt satıra geçme etiketi <br> dir. Ve kapanış etiketi yoktur. Kaç satır alt satıra geçmek istiyorsanız o kadar <br> tagi ekleyebilirsiniz. Yeri önemli değildir. Satır sonu ya da bir alt satırın başı. Düzenli kodlama için satır sonuna yazmak iyidir.-->
+
+    <p> Test 1 Satırı <br>
+        Test 2 Satırı 
+        <br>
+        Test 3 Satırı <br> <br>
+        Test 4 Satırı <br>
+        Test 5 Satırı
+    
+    </p>
+
+    <!-- <p> tagi ile alt satıra geçmeside sağlanabilir <br> tagine göre paragraf boşluğu bırakacaktır. Buna dikkat etmek gerekir. Aşağıdaki kodları yazdıktan sonra çalıştırarak farkı görebilirsiniz.-->
+
+    <p> Test 1 Satırı </p>
+    <p> Test 2 Satırı </p>
+    <p> Test 3 Satırı </p>
+
+
+    <!-- Editörde yazdığıımz gibi şekli korunsun ve bunun için ekstra kodlar etiketler eklemeyelim isterseniz. Bunun için <pre> </pre> Etiketleri kullanılabilir. Bu etiketler arasında yazılan her cümle tarayıcıya yazıldığı gibi yansır. pre etiketi ile kod parçaları şekli bozulmadan sayfaya eklenebilir. Bir örnekle görebiliriz. -->
+
+    <pre>
+
+        Test 1 Satırı
+
+        Test 2 Satırı
+
+        Test 3 Satırı       Deneme 1 
+
+
+    </pre>
+
+<pre>
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace Kod_S_Disklerin_Boyutunu_Ogrenme
+{
+    class Program
+    {
+        public enum Boyutlar
+        {
+            bytee
+        }
+
+        static void Main(string[] args)
+        {
+            foreach (DriveInfo disk in DriveInfo.GetDrives())
+            {
+                Console.WriteLine("Disk: {0}", disk.Name);
+
+                if (disk.IsReady)
+                {
+                    Console.WriteLine("Toplam Alan:\t\t{0}", disk.TotalSize.ToString());
+
+                    Console.WriteLine("Boş Alan Miktarı:\t{0}", disk.AvailableFreeSpace.ToString());
+                }
+                Console.WriteLine("**********");
+            }
+
+            Console.ReadLine();
+
+        }
+        public string frm(long DosyaBoyutu)
+        {
+            Boyutlar BoyutTanim = Boyutlar.bytee;
+
+            while (Math.Round((decimal)DosyaBoyutu) >= 1000)
+            {
+                DosyaBoyutu /= 1024;
+
+                BoyutTanim++;
+            }
+
+            return string.Format("{0}\t{1}", DosyaBoyutu.ToString("f2"), BoyutTanim);
+        }
+   
+    }
+}
+
+
+
+</pre>
+
+
+</body>
+</html>

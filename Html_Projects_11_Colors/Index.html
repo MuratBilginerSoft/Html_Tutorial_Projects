@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body>
+
+    <!-- Html de renk bildirimleri bir kaç formatta yapılabilir. -->
+
+    <!-- 1. Color Name verilerek yapabiliriz. 140 Adet renk ismine şuradan göz atılabilir https://www.w3schools.com/colors/colors_names.asp -->
+
+    <p style="background-color: red; color: white;"> Test Satırı</p>
+
+
+    <div style="background-color:tomato; width: 200px; height: 75px; color: white; text-align: center; font-size: 30px;"> Tomato</div>
+    <div style="background-color:dodgerblue; width: 200px; height: 75px; color: white; text-align: center; font-size: 30px;"> DodgerBlue</div>
+    <div style="background-color:teal; width: 200px; height: 75px; color: white; text-align: center; font-size: 30px;"> Teal</div>
+    <div style="background-color:yellow;width: 200px; height: 75px; color: black; text-align: center; font-size: 30px;"> Yellow</div>
+
+    <h1 style="color:Tomato;">Hello World</h1>
+    <p style="color:DodgerBlue;">Lorem ipsum...</p>
+    <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+
+    <!-- Border Belirleme -->
+
+    <p style="border: 3px solid red;"> Test</p>
+
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+
+
+    <!-- RGB Values
+    
+        HTML’de, bu formül kullanılarak bir renk RGB değeri olarak belirtilebilir:
+
+rgb (kırmızı, yeşil, mavi)
+
+Her parametre (kırmızı, yeşil ve mavi) rengin yoğunluğunu 0 ile 255 arasında tanımlar.
+
+Örneğin, rgb (255, 0, 0) kırmızı olarak gösterilir, çünkü kırmızı en yüksek değerine (255) ve diğerleri 0'a ayarlanır.
+
+Siyahı görüntülemek için, tüm renk parametrelerini 0 olarak ayarlayın: rgb (0, 0, 0).
+
+Beyazı görüntülemek için tüm renk parametrelerini 255'e ayarlayın, bunun gibi: rgb (255, 255, 255).
+    
+    -->
+
+    <p style="background-color: rgb(37, 40, 182);"> Test Satırıdır</p>
+    <p style="background-color: rgb(68, 90,250);"> Test Satırıdır</p>
+    <p style="background-color: rgb(100, 30,31);"> Test Satırıdır</p>
+
+    <!-- HEX Values 
+    
+HTML'de, formdaki onaltılık bir değer kullanılarak bir renk belirtilebilir:
+
+#kkyymm
+
+Rr (kırmızı), gg (yeşil) ve bb (mavi), 00 ile ff arasındaki onaltılık değerlerdir (ondalık 0-255 ile aynı).
+
+Örneğin, # ff0000 kırmızı olarak gösterilir, çünkü kırmızı en yüksek değere (ff) ve diğerleri en düşük değere (00) ayarlanır.
+    
+    -->
+
+    <p style="background-color: #ff0000;"> Test Satırıdır</p>
+
+    <!-- HSL Values
+    
+
+HTML'de, bir renk tonu, doygunluk ve açıklık (HSL) kullanılarak belirtilebilir:
+
+hsl (ton, doygunluk, hafiflik)
+
+Ton renk tekerleğinde 0 - 360 arasında bir derecedir. 0 kırmızı, 120 yeşil ve 240 mavidir.
+
+Doygunluk, yüzde değeridir,% 0, gri bir gölge anlamına gelir ve% 100, tam renktir.
+
+Hafiflik de bir yüzde,% 0 siyah,% 50 ne açık veya koyu,% 100 beyaz
+
+    -->
+
+    <p style="background-color: hsl(55, 100%, 50%)"> Test Satırıdır</p>
+
+    <!-- Saturation
+
+Doygunluk bir rengin yoğunluğu olarak tanımlanabilir.
+
+% 100 saf renk, gri tonları yok
+
+% 50 gri,% 50 gri, ancak yine de rengi görebilirsiniz.
+
+% 0 tamamen gri, artık rengi göremiyorsunuz.
+
+
+     -->
+
+     <!--
+         RGBA Values
+
+RGBA renk değerleri, rengin opaklığını belirten alfa kanallı RGB renk değerlerinin bir uzantısıdır.
+
+Bir RGBA renk değeri ile belirtilir:
+
+rgba (kırmızı, yeşil, mavi, alfa)
+
+Alpha parametresi 0.0 (tamamen saydam) ile 1.0 (saydam değil) arasında bir sayıdır:
+     -->
+
+     <p style="background-color: rgba(55, 120,120,0.3)"> Test Satırıdır</p>
+
+     <p style="background-color: rgba(55, 120,120,0.7)"> Test Satırıdır</p>
+
+<!-- HSLA Values
+
+HSLA renk değerleri, bir renk için opaklığı belirten bir alfa kanalına sahip HSL renk değerlerinin bir uzantısıdır.
+
+Bir HSLA renk değeri ile belirtilir:
+
+hsla (ton, doygunluk, hafiflik, alfa)
+
+Alpha parametresi 0.0 (tamamen saydam) ile 1.0 (saydam değil) arasında bir sayıdır:-->
+
+<p style="background-color: hsl(55, 100%, 50%,0.4)"> Test Satırıdır</p>
+<p style="background-color: hsl(55, 100%, 50%,0.8)"> Test Satırıdır</p>
+    
+</body>
+</html>
