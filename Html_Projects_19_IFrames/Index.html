@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body>
+
+    <!-- Bir web sayfası içinde başka bir web sayfasını açmak istersek IFrame tagi kullanılır. Tagin src özelliği gidilecek adresi belirtir. -->
+
+    <iframe src="https://muratbilginer.net"></iframe>
+
+    <!-- 2 Iframe bölümünün yükseklik ve genişlik değerleri verilebilir. Iframe bir ınline bloktur. -->
+
+    <iframe src="https://muratbilginer.net" style="height: 300px; width: 600px;"></iframe>
+
+    <!-- Başka sayfalardan içeriklerin embed kodlarını alarak kendi sayfamıza ekleyebiliriz. Örneğin bir youtube videosunu sayfamıza ekleyelim.-->
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t0zyk49xdP4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 30px;"></iframe>
+
+
+    <iframe src="demo_iframe.htm" style="border:none;"></iframe>
+
+    <iframe src="demo_iframe.htm" style="border:2px solid red;"></iframe>
+
+    <!--Bir iframe, bir bağlantının hedef çerçevesi olarak kullanılabilir. Bağlantının hedef niteliği, iframe'in name özelliğine başvurmalıdır: Bu sayede iframe sayfa yüklenirken yüklenmeye çalışmaz linke tıklandığında yüklenecektir.-->
+
+    <iframe src="https://www.w3schools.com" name="iframe_a"></iframe>
+
+    <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+
+
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+
+    <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code>
+
+    <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        </pre>
+
+</body>
+</html>

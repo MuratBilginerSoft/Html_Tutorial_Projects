@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body>
+    
+    <!-- Html'de listeler sıralı ve sırasıs listeler olarak ikiye ayrılır. Sırasız listeler <ul> etiketiyle tanımlanır. Unordered List ifadesinin baş harfleridir. İçerikler <li> etiketi ile tanımlanır. -->
+
+
+        <ul>
+
+            <li> Iphone </li>
+            <li> LG     </li>
+            <li> HTC    </li>
+
+
+        </ul>
+
+    <!-- Sırasız listelerin belirteçleri coder tarafından belirtilebilir. Default değeri circle'dır Diğer değerler ise Disc - Circle - Square - None(Hiç bir şey belirtmek istemezsek) Bunu belirtirken liste tanımının style attribute'unun list-style-type özelliği ile belirlenir.-->   
+
+    <br>
+
+    <ul style="list-style-type:square;"> 
+    
+        <li> Iphone </li>
+        <li> LG     </li>
+        <li> HTC    </li>
+    
+    </ul>
+
+    <!-- Her liste elemanı bir block elemandır tüm satırı kaplar. Yeni list elemanı bir alt satırdan başlar. Bir liste elemanın arka plan rengini değiştirerek bunu görebilirsiniz -->
+
+
+    <ul style="list-style-type:none;"> 
+    
+        <li style="background-color: chartreuse;"> Iphone </li>
+        <li> LG     </li>
+        <li> HTC    </li>
+    
+    </ul>
+
+    <!-- Sıralı bir liste oluşturmak istersek <ol> etiketi kullanılır. ordered list ifadesinin baş harfleridir.-->
+
+        <ol>
+
+            <li>Iphone</li>
+            <li>LG</li>
+            <li>HTC</li>
+
+        </ol>
+
+    <!-- Kullandığınız Editor Emmet Destekliyorsa Bir liste oluşturmak için şöyle bir kısa yol kullanabilirsiniz. ul>li*5 örneğin bu 5 tane liste elemanını otomatik olarak oluşturur. -->
+
+    <ol>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+    </ol>
+
+    <!-- Sıralı liste elamanın sıra şeklini belirleyebilirsiniz. 
+    
+        type = "1" Liste öğeleri sayılarla numaralandırılacaktır (varsayılan)
+        type = "A" Liste öğeleri büyük harflerle numaralandırılacaktır
+        type = "a" Liste öğeleri küçük harflerle numaralandırılacaktır
+        type = "I" Liste öğeleri büyük harfli roma rakamlarıyla numaralandırılacaktır
+        type = "i" Liste öğeleri küçük harf Roma rakamlarıyla numaralandırılacaktır
+    
+    -->
+
+    <ol style="list-style-type: lower-alpha;">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+
+    <ol style="list-style-type: upper-alpha;">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+
+    <ol style="list-style-type: upper-latin;">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+
+    <ol style="list-style-type: lower-roman;">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ol>
+
+    <!-- Açıklama Listeleri Oluşturabiliriz. Bunu <dl> Description List isminden gelir. ve açıklaması yazılacak olan liste elemanları <dt> ile belirtilir. Bununla ilgili alt satırlar <dd> ile bildirilir.-->
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl>
+
+
+      <!-- Listeler iç içe oluşturulabilirler Sıralı ve sırası olması fark etmez.-->
+
+      <H1> Stok Ürünleri </H1>
+
+      <ul>
+
+        <li>Elektronik
+
+
+            <ol>
+                <li>A</li>
+                <li>B</li>
+            </ol>
+            
+        </li>
+
+        <li>Bahçe İşleri
+
+            <ol>
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+            </ol>
+
+
+        </li>
+
+        <li>D</li>
+        <li>E</li>
+
+
+      </ul>
+
+      <!-- Listelerin başlangıç değerlerini belirleyebiliriz -->
+
+      <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol>
+
+      <!-- Listeleri istersek Horizontal yani yatay olarak oluşturabilir. Özellikle sitelerin Header menuleri ooluşturulurken sıkça kullanılır. Bunun için sırasız bir liste oluşturmak mantıklı olacaktır. Belirtecini none yapabiliriz. margin ve padding değerlerini istediğimiz gibi ayarlayabiliriz. Ancak bu özelliğin sağlanabilmesi için list elamanın float özelliği left olmalıdır. list elemanının bir block element olduğunu yani satırı tamamen kapladığını söylemiştik. Bunu ortadan kaldırabilmek için nesneyi sola yaslamamız gerekir.-->
+
+      <ul style="list-style-type: none; overflow: hidden; ">
+     
+        <li style="float: left;  margin: 5px; padding: 5px;">Home</li>
+        <li style="float: left;  margin: 5px; padding: 5px;">News</li>
+        <li style="float: left;  margin: 5px; padding: 5px;">Contact</li>
+        <li style="float: left;  margin: 5px; padding: 5px;">About</li>
+    
+     </ul>
+
+     <!-- Bu listeyi CSS dokümanında daha detaylıca ele aldık. -->
+
+     
+
+
+</body>
+</html>

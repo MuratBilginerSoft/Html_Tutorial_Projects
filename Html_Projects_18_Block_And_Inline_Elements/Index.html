@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body style="margin: 0;">
+
+    <!-- Html'de elementler Block ve inline olmak üzere ikiye ayrılır. Block elemenetler kendisine ne kadar alan ayrılmışsa eğer ekstra css özellikleri ile kısıtlandırılmadıysa o satırın tamamını kaplar. Block elemenleri conteinerlar gibi düşünebilir. İçerisinde diğer html elemanlarını barındırırlar ve düzeni sağlamak için gruplar oluşturabilmek ve bu bir biriyle bağıntılı grupları daha efektif yönetebilmek için kullanılırlar.
+    Block elementler tüm satırı kaplarlar. Inline elementler ise içerisindeki elemanlar ne kadar yer kaplıyorsa o da o kadar yer kaplayacaktır.
+ -->
+
+ <!--Bir div bloku oluşturup inceleyelim. Div blokları Html'de gruplamak için en sık kullanılan taglerdir. Bir div blokunun içine istediğiniz her html elemanını yerleştirebilirsiniz. Şimdi adım adım bir div blogunu şekillendireceğiz-->
+
+ <!-- 1. Div Blogu Oluştur Bu şekilde oluşturulmuş bir div blogu içinde hiç bir öge barındırmadığı için ekranda sadece bir satırlık yer kaplayacaktır. Ama bunu gözle görmek olanaklı olmayacaktır. Bu haliyle bu html dokümanını çalıştırsak boş bir ekran görürüz.-->
+
+ <div>
+
+
+ </div>
+
+ <!-- 2 Bir Başlık ve bir paragraf ekleyelim. -->
+
+ <div>
+
+    <h1>Brainy Tech</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae neque rem nam sequi quae quibusdam alias, suscipit aspernatur beatae!</p>
+
+
+ </div>
+
+ <!-- 3 Div'in sınırlarını anlayabilmek için bir arka plan rengi verelim-->
+
+ <div style="background-color: chartreuse;">
+
+    <h1>Brainy Tech</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae neque rem nam sequi quae quibusdam alias, suscipit aspernatur beatae!</p>
+
+</div>
+
+<!-- 4 2 tane div oluşturalım ve birinin yükseklik genişlik değerlerini kendimiz belirleyelim.-->
+
+<div style="height:100px; width: 500px;">
+
+    <h1>Brainy Tech</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae neque rem nam sequi quae quibusdam alias, suscipit aspernatur beatae!</p>
+
+</div>
+
+<div style="background-color: chartreuse;">
+
+    <h1>Brainy Tech</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde repudiandae neque rem nam sequi quae quibusdam alias, suscipit aspernatur beatae!</p>
+
+</div>
+ 
+<!-- Burada gördüğünüz gibi herhangi bir alt satıra geçme komutu vermemmize rağmen bir sonraki div alt satırdan başladı yanından değil. -->
+
+<!-- 6 Div içinde div yazılabilir. Aşağıdaki gibi boyut belirtmeden bildirirseniz içerisine değer girene kadar div elemenleri görünü olmayacaktır.  -->
+
+<div style="background-color: chartreuse;">
+ 
+    <div style="background-color: cornflowerblue;"> ABC</div>
+
+    <div style="background-color:darkgray;"></div>
+
+    <div style="background-color:darkred;"></div>
+
+
+</div></div>
+
+<!-- Daha belirgin anlayabilmek için boyut ve border verilebilir-->
+
+<!--Eğer height değerini verir width değerini vermesseniz genişliği %100 alacaktır.-->
+
+<br>
+
+<!-- Bir Html belgesi standart olarak body kısmı sağdan soldan alttan üstten standart bir margin değeriyle gelir. Oluşturuğunuz divlere bakarasanız sağında solunda beyaz kısımlar görmeniz olasıdır. Bunun önüne geçebilmek için body etiketinin margin özelliğini 0 yapmak gerekir. Böylelikle içerikler tam sayfada kusursuz gözükecektir. Ancak bu da yazıların tamamen sola yaslanması gibi bir durum ortaya çıkarır. Bunu içeriklerin margin ya da padding özelliklerini değiştirerek çözebiliriz.-->
+
+<div style="background-color:darkslategrey; height: 500px;">
+
+    <div style="border: 1px white solid ; height: 200px; background-color: dodgerblue;"></div>
+    <div style="border: 1px white solid ; height: 100px; background-color: yellow;"></div>
+    <div style="border: 1px white solid ; height: 200px; background-color:firebrick;"></div>
+
+
+</div>
+
+<!-- Eğer içerideki divlerin height değerlerini dış div heigt değerinden daha büyük verseydim dışarı taşma yapardı. Bunlara dikkat etmek gerekir. -->
+
+<!--
+<div style="background-color:darkslategrey; height: 500px;">
+
+    <div style="border: 1px white solid ; height: 500px; background-color: dodgerblue;">A</div>
+    <div style="border: 1px white solid ; height: 100px; background-color: yellow;">V</div>
+    <div style="border: 1px white solid ; height: 500px; background-color:firebrick;">C</div>
+
+</div> -->
+
+<!-- Dışarı taşma yaptığında en üst divden sonra yeni bir eleman eklenirse taşma olan yerin üzerine gelecetir. -->
+
+<!-- Block Elementler
+
+    <address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+
+
+-->
+
+<!-- Div gibi bir başka group elementi <span> dır. Span ancak inline elementir. Yani boyutu özellikle belirtilmediyse içerisine eklenen elementin boyutu kadardır. Aşağıdaki 2 kodlama yan yana gözükecektir.-->
+
+    <span>
+
+        Brainy Tech
+
+    </span>
+
+    <span style="background-color: rgb(230, 16, 230);">
+    
+        Brainy Tech
+
+    </span>
+
+<!-- Inline Elementler
+
+    <a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+
+
+-->
+
+
+
+</body>
+</html>
