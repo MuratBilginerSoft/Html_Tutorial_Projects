@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body style="background-image: url('Images/image_map_example.jpg'); background-repeat: no-repeat;">
+    
+    <!-- Background-ımage Özelliği olan tüm etiketlerin arka planına resim ekleyebiliriz-->
+
+    <div style="background-image: url('Images/image_map_example.jpg'); width: 400px; height: 500px;" >
+        
+            You can specify background images<br>
+            for any visible HTML element.<br>
+            In this example, the background image<br>
+            is specified for a div element.<br>
+            By default, the background-image<br>
+            will repeat itself in the direction(s)<br>
+            where it is smaller than the element<br>
+            where it is specified. (Try resizing the<br>
+            browser window to see how the<br>
+            background image behaves.
+            
+    </div>
+
+    <!-- Resmi sayfanın tamamına eklemek isterseniz body etiketi kullanılmalıdır. -->
+
+
+    <!-- Resmin tekrarı konusunda  background-repeat: no-repeat; özelliği kullanılır. 
+    
+        Defaul değeri bütün ekran boyunca tekrardır.
+
+        SAdece x ekseninde tekrar etsin istersek repeat-x 
+        Sadece y ekseninde tekrar etsin istersek repeat-y
+    -->
+
+    <div style="background-image: url('Images/image_map_example.jpg'); background-attachment: fixed; background-size: 100% 100%; width: 400px; height: 500px;" >
+
+    <div style="background-image: url('Images/image_map_example.jpg'); background-attachment: fixed; background-size: 100% 100%;  width: 400px; height: 500px;" >
+
+
+     <!-- Picture etiketi ile farklı tarayıcı çözünürlüklerinde istediğimiz resmi orada göstermek için kullandığımız bir etikettir. -->
+     
+     <picture>
+
+        <source media="(min-width: 650px)" srcset="Images/image_map_example.jpg">
+        <source media="(min-width: 450px)" srcset="Images/8.png">
+
+     </picture>
+
+
+</body>
+</html>

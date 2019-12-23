@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body>
+
+
+    <!-- Htmlde bir resim üzerinde haritalama işlemi yaparak resmin belli bölümlerine odaklanabiliriz. O alanlara link verip yönlendirme yapabiliriz. -->
+
+    <!-- Öncelikle elimizde bir resmimiz olmalı. Bu resim üzerinde haritalama yapabilmek için img etiketinin usemap attribute'u kullanılır. Burada daha sonra map etiketi içinde kullanılacak isim verilir. Başına # işareti koyulur. -->
+
+    <img src="Images/html-browser-support.jpg" usemap="#Browsers">
+
+    <!-- Şimdi bunun üzerinde bir haritalama yapabilmek için map etiketiyle gerekli işlemleri yapacağız -->
+
+    <!-- map'in name özelliğine img'de usemap de verdiğimiz ismi vermeliyiz.-->
+
+    <!-- map içinde haritalama yapacağımız alanları tanımlama için area etiketini kullanılır.-->
+
+    <!-- Target ile link verilen sayfanın nasıl açılacağını belirleyebiliriz. alt özelliği ile gösterilen bölgeye tanımlayıcı bir isim verebilirsiniz. title ile üzerine gidildiğinde mouse ile bilgilendirme vermek için kullanılır. href özelliği ile hangi linke gidilecekse o belirtilir. coords özelliği en önemli özelliktir. ve haritalanacak şeklin hangi konumda olduğu belirtilir. shape özelliği ile de nasıl gözükeceği -->
+
+    <map name="Browsers">
+
+        <area target="_blank" alt="Google Chrome" title="Google Chrome" href="https://www.google.com/chrome/" coords="136,149,93" shape="circle">
+        <area target="_blank" alt="Mozilla Firefox" title="Mozilla Firefox" href="https://www.mozilla.org/firefox" coords="351,149,92" shape="circle">
+        <area target="_blank" alt="Apple Safari" title="Apple Safari" href="https://www.apple.com/tr/safari/" coords="566,152,93" shape="circle">
+        <area target="_blank" alt="Microsoft Edge" title="Microsoft Edge" href="https://www.microsoft.com/tr-tr/windows/microsoft-edge" coords="774,154,93" shape="circle">
+        <area target="_blank" alt="Opera" title="Opera" href="http://www.opera.com/tr" coords="976,148,90" shape="circle">
+        <area target="_blank" alt="Internet Explorer" title="Internet Explorer" href="https://www.microsoft.com/tr-tr/download/internet-explorer.aspx" coords="1204,154,80" shape="circle">
+
+    </map>
+
+
+    <!-- İpucu Images Dosyasında Iphone resmi üzerinde sadece telefonu içine alan bir map oluşturmak istiyor olalım. 
+    
+        Koordinatları bulabilmek için yapabileceğiniz an kolay işlem resmi paint uygulamasına atmak ve belirli koordinatların üzerine giderek bilgiyi ekranın sol alt köşesinden görebilirsiniz.
+    
+    -->
+
+    <img src="Images/Iphone.jpg" usemap="#Iphone" >
+
+    <map name="Iphone">
+
+        <area target="_blank" alt="Iphone" title="Iphone" href="https://www.google.com/chrome/" coords="20,166,247,64,393,620,625,485" shape="poly">
+        <area target="_blank" alt="Iphone" title="S" href="https://www.google.com/chrome/" coords="416,476,445,501" shape="rect">
+
+    </map>
+
+    
+</body>
+</html>

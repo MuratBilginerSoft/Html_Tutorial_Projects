@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Html Tutorial</title>
+</head>
+<body>
+    
+    <!-- Html de verileri tablolar halinde gösterebilmek için table etiketi kullanılır -->
+
+    <!-- 1. Bir tablo tanımlayalım-->
+
+    <table> </table>
+
+
+    <!-- 2 Tabloya boyut verelim. Aşağıdaki gibi verdiğimizde bütün sayfayı kapyalacaktık. Height değeri ise veri geldikçe kendi alacak değerini.-->
+
+    <table style="width: 100%;"></table>
+
+    <!-- 3. Tablomdaki başlıkları belirleyelim. Bunun için th etiketini kullanacağız. Her bir satır için tr yani tablerow etiketi kullanılır.-->
+
+
+    <table style="width: 100%;">
+    
+        <tr>
+
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Age</th>        
+
+        </tr>
+
+    </table>
+
+    <!-- 4. Tablomuza Veriler ekleyelim. Bunun için td yani table data etiketini kullanacağız-->
+
+
+    <table style="width: 100%;">
+    
+        <tr>
+
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Age</th>        
+
+        </tr>
+
+        <tr>
+
+            <td>Murat</td>
+            <td>Bilginer</td>
+            <td>27</td>
+
+        </tr>
+
+    </table>
+
+    <!-- 5. Tablomuza border ekleyelim. Bu işlem sadece tablonun dış çerçevesini oluşturacaktır.-->
+
+    <table style="width: 100%; border: 1px solid black;">
+    
+        <tr>
+
+         <th>First Name</th>
+         <th>Last Name</th>
+         <th>Age</th>        
+
+        </tr>
+
+        <tr>
+
+            <td>Murat</td>
+            <td>Bilginer</td>
+            <td>27</td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!-- 6 Şimdi Bütün sutunlara border verelim. Not: Rowlara ayrı ayrı border veremezsiniz.-->
+    <!-- 7 Border-collapse özelliği ile borderların bir birlerinden uzaklığını belirleyebiliriz. Collapse özelliği verilirse ayrı gözükmeyecektir.-->
+
+
+    <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+    
+        <tr  >
+
+         <th style="border: 1px solid black;">First Name</th>
+         <th style="border: 1px solid black;">Last Name</th>
+         <th style="border: 1px solid black;">Age</th>        
+
+        </tr>
+
+        <tr style="border: 1px solid black;">
+
+            <td style="border: 1px solid black;">Murat</td>
+            <td style="border: 1px solid black;">Bilginer</td>
+            <td style="border: 1px solid black;">27</td>
+
+        </tr>
+
+        <tr >
+
+            <td style="border: 1px solid black;">Murat</td>
+            <td style="border: 1px solid black;">Bilginer</td>
+            <td style="border: 1px solid black;">27</td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!-- 8. tablo içindeki yazıları ortalayalım-->
+    
+
+    <table style="width: 100%; border: 1px solid black; border-collapse: collapse; text-align: center;">
+    
+        <tr  >
+
+         <th style="border: 1px solid black;">First Name</th>
+         <th style="border: 1px solid black;">Last Name</th>
+         <th style="border: 1px solid black;">Age</th>        
+
+        </tr>
+
+        <tr style="border: 1px solid black;">
+
+            <td style="border: 1px solid black;">Murat</td>
+            <td style="border: 1px solid black;">Bilginer</td>
+            <td style="border: 1px solid black;">27</td>
+
+        </tr>
+
+        <tr >
+
+            <td style="border: 1px solid black;">Murat</td>
+            <td style="border: 1px solid black;">Bilginer</td>
+            <td style="border: 1px solid black;">27</td>
+
+        </tr>
+
+    </table>
+
+    <!-- 9. Bütün hücrelere padding verebiliriz. Daha güzel görünmesini sağlayacaktır.-->
+
+    <br>
+
+    <table style="width: 100%; border: 1px solid black; border-collapse: collapse; text-align: center; ">
+    
+        <tr >
+
+         <th style="border: 1px solid black; padding: 10px;">First Name</th>
+         <th style="border: 1px solid black; padding: 10px;">Last Name</th>
+         <th style="border: 1px solid black; padding: 10px;">Age</th>        
+
+        </tr>
+
+        <tr style="border: 1px solid black; padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+        <tr style="padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+    </table>
+
+    <!-- 10. Borderlar arası mesafe verebilmek için border-spacing özelliği kullanılır. Collapse özelliği kullanılmamaldırç-->
+
+    <br>
+
+    <table style="width: 100%; border: 1px solid black; text-align: center; border-spacing: 5px">
+    
+        <tr >
+
+         <th style="border: 1px solid black; padding: 10px;">First Name</th>
+         <th style="border: 1px solid black; padding: 10px;">Last Name</th>
+         <th style="border: 1px solid black; padding: 10px;">Age</th>        
+
+        </tr>
+
+        <tr style="border: 1px solid black; padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+        <tr style="padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+    </table>
+
+    <!-- Colspan özelliği ile hücreleri birleştirelim-->
+
+    <br>
+
+
+    <table style="width: 100%; border: 1px solid black; text-align: center; border-spacing: 5px">
+    
+        <tr >
+
+         <th style="border: 1px solid black; padding: 10px;">First Name</th>
+         <th style="border: 1px solid black; padding: 10px;"  colspan="2">Last Name</th>
+               
+
+        </tr>
+
+        <tr style="border: 1px solid black; padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+        <tr style="padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+    </table>
+
+
+    <!-- 12. Row ile satır birleştirmesi yapabiliriz -->
+
+    <table style="width:100%">
+        <tr>
+          <th>Name:</th>
+          <td>Bill Gates</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Telephone:</th>
+          <td>55577854</td>
+        </tr>
+        <tr>
+          <td>55577855</td>
+        </tr>
+      </table>
+
+
+      <!-- Tabloya bir isim verebilirisniz. -->
+
+      <br>
+
+      <table style="width: 100%; border: 1px solid black; text-align: center; border-spacing: 5px">
+    
+        <caption> Kişi Bilgileri </caption>
+        <tr >
+
+         <th style="border: 1px solid black; padding: 10px;">First Name</th>
+         <th style="border: 1px solid black; padding: 10px;"  colspan="2">Last Name</th>
+               
+
+        </tr>
+
+        <tr style="border: 1px solid black; padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+        <tr style="padding: 10px;">
+
+            <td style="border: 1px solid black; padding: 10px;">Murat</td>
+            <td style="border: 1px solid black; padding: 10px;">Bilginer</td>
+            <td style="border: 1px solid black; padding: 10px;">27</td>
+
+        </tr>
+
+    </table>
+
+    <br>
+
+    <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot>
+      </table>
+
+</body>
+</html>
